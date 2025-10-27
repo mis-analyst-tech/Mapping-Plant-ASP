@@ -1,0 +1,2761 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1b9f7085220cef552f2d0790f632da05 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    <div id="html_bb87012cc14c358755ede2e994b6571e" style="width: 100.0%; height: 100.0%;">
+     <div style="
+         position: fixed;
+         top: 10px; left: 50%;
+         transform: translateX(-50%);
+         z-index: 9999;
+         background: linear-gradient(90deg, #1e3a8a, #2563eb);
+         color: white;
+         padding: 12px 30px;
+         border-radius: 12px;
+         box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+         font-family: 'Trebuchet MS', sans-serif;
+         font-size: 20px;
+         font-weight: bold;
+         letter-spacing: 1px;
+     ">
+         🌍 Peta Distribusi <span style="color:#e0f2fe;">Plant ASP</span> (Air Separation Plant)
+     </div>
+</div>
+    
+            <div class="folium-map" id="map_1b9f7085220cef552f2d0790f632da05" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1b9f7085220cef552f2d0790f632da05 = L.map(
+                "map_1b9f7085220cef552f2d0790f632da05",
+                {
+                    center: [-2.0, 118.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2c3bcc5ba2f8c5fc499e435bb3f7af27 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2c3bcc5ba2f8c5fc499e435bb3f7af27.addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var marker_b483adf31d70357aed390ecfc4b626f2 = L.marker(
+                [-6.19406805, 106.3212326],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_a57a58a9b0c8cf69ce73dda2575129b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_13e79042af06d047220f011d176a6388 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8660e43825fc7ad189f5b58cc271ecec = $(`<div id="html_8660e43825fc7ad189f5b58cc271ecec" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Cikande (ASP & Liq)</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 115.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>151,116</td>                 <td>149,893</td>                 <td>1,774,000</td>             </tr>                          <tr>                 <td><b>LIN</b></td>                 <td>143,950</td>                 <td>139,643</td>                 <td>1,434,800</td>             </tr>                          <tr>                 <td><b>LAR</b></td>                 <td>6,027</td>                 <td>6,080</td>                 <td>86,700</td>             </tr>                          <tr>                 <td><b>GOX</b></td>                 <td>39,600</td>                 <td>39,600</td>                 <td>0</td>             </tr>                          <tr>                 <td><b>GAN</b></td>                 <td>132,000</td>                 <td>132,000</td>                 <td>0</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_13e79042af06d047220f011d176a6388.setContent(html_8660e43825fc7ad189f5b58cc271ecec);
+            
+        
+
+        marker_b483adf31d70357aed390ecfc4b626f2.bindPopup(popup_13e79042af06d047220f011d176a6388)
+        ;
+
+        
+    
+    
+            marker_b483adf31d70357aed390ecfc4b626f2.bindTooltip(
+                `<div>
+                     SIG Cikande (ASP & Liq)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b483adf31d70357aed390ecfc4b626f2.setIcon(icon_a57a58a9b0c8cf69ce73dda2575129b4);
+            
+    
+            var marker_60f01d4e4a83f7aee7b1f0abf4b95365 = L.marker(
+                [-6.17834494, 106.9242917],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_f1ce80e7eb58e7211949b964edbc6c62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9594d21302be115599fb384a88c2267b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8e06eee04a902ed66e3ae37c2f5f53f3 = $(`<div id="html_8e06eee04a902ed66e3ae37c2f5f53f3" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Pulogadung (ASP & Liq)</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 86.6 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>     </table>     </div>     </div>`)[0];
+                popup_9594d21302be115599fb384a88c2267b.setContent(html_8e06eee04a902ed66e3ae37c2f5f53f3);
+            
+        
+
+        marker_60f01d4e4a83f7aee7b1f0abf4b95365.bindPopup(popup_9594d21302be115599fb384a88c2267b)
+        ;
+
+        
+    
+    
+            marker_60f01d4e4a83f7aee7b1f0abf4b95365.bindTooltip(
+                `<div>
+                     SIG Pulogadung (ASP & Liq)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_60f01d4e4a83f7aee7b1f0abf4b95365.setIcon(icon_f1ce80e7eb58e7211949b964edbc6c62);
+            
+    
+            var marker_3d5f6e28bda12d0716ad3073e6e70383 = L.marker(
+                [-6.29294688, 107.1125409],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_6a0742f0c1ac5060d7a937fef57eb0a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_520aba3e38987d0a4909ab1310610deb = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f614d54c36dc0161dcb9e52b55119735 = $(`<div id="html_f614d54c36dc0161dcb9e52b55119735" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Bekasi (ASP & Liq)</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 113.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>70,191</td>                 <td>87,490</td>                 <td>800,000</td>             </tr>                          <tr>                 <td><b>LIN</b></td>                 <td>121,777</td>                 <td>124,654</td>                 <td>1,030,000</td>             </tr>                          <tr>                 <td><b>LAR</b></td>                 <td>2,316</td>                 <td>2,221</td>                 <td>19,700</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_520aba3e38987d0a4909ab1310610deb.setContent(html_f614d54c36dc0161dcb9e52b55119735);
+            
+        
+
+        marker_3d5f6e28bda12d0716ad3073e6e70383.bindPopup(popup_520aba3e38987d0a4909ab1310610deb)
+        ;
+
+        
+    
+    
+            marker_3d5f6e28bda12d0716ad3073e6e70383.bindTooltip(
+                `<div>
+                     SIG Bekasi (ASP & Liq)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3d5f6e28bda12d0716ad3073e6e70383.setIcon(icon_6a0742f0c1ac5060d7a937fef57eb0a1);
+            
+    
+            var marker_ff5fe79f0ff09d43e537b250e9e6567a = L.marker(
+                [-6.9638263, 110.2642257],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_38039e5b08e0dabb40d2d91b30d76416 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a3d3207fbd08feeae620fd86151e7feb = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_fe1bdf770b7415264045e681b444225b = $(`<div id="html_fe1bdf770b7415264045e681b444225b" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Kendal (ASP & Liq)</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 45.7 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>13,806</td>                 <td>15,984</td>                 <td>420,000</td>             </tr>                          <tr>                 <td><b>LIN</b></td>                 <td>22,596</td>                 <td>28,888</td>                 <td>504,000</td>             </tr>                          <tr>                 <td><b>LAR</b></td>                 <td>323</td>                 <td>360</td>                 <td>17,000</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_a3d3207fbd08feeae620fd86151e7feb.setContent(html_fe1bdf770b7415264045e681b444225b);
+            
+        
+
+        marker_ff5fe79f0ff09d43e537b250e9e6567a.bindPopup(popup_a3d3207fbd08feeae620fd86151e7feb)
+        ;
+
+        
+    
+    
+            marker_ff5fe79f0ff09d43e537b250e9e6567a.bindTooltip(
+                `<div>
+                     SIG Kendal (ASP & Liq)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ff5fe79f0ff09d43e537b250e9e6567a.setIcon(icon_38039e5b08e0dabb40d2d91b30d76416);
+            
+    
+            var marker_d8d81efdeee4499b42c10e06c1be1938 = L.marker(
+                [-6.39658483, 108.4058501],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_50a5797c39fa23ab0ff71f98fe66d503 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3274a28f87da1a1c0cb72301a94cbbd7 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_5954e9f02bac2514def3db4aed6e7811 = $(`<div id="html_5954e9f02bac2514def3db4aed6e7811" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SGI Balongan</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 196.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LIN</b></td>                 <td>0</td>                 <td>15,000</td>                 <td>27,000</td>             </tr>                          <tr>                 <td><b>GAN</b></td>                 <td>16,054</td>                 <td>16,054</td>                 <td>0</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_3274a28f87da1a1c0cb72301a94cbbd7.setContent(html_5954e9f02bac2514def3db4aed6e7811);
+            
+        
+
+        marker_d8d81efdeee4499b42c10e06c1be1938.bindPopup(popup_3274a28f87da1a1c0cb72301a94cbbd7)
+        ;
+
+        
+    
+    
+            marker_d8d81efdeee4499b42c10e06c1be1938.bindTooltip(
+                `<div>
+                     SGI Balongan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d8d81efdeee4499b42c10e06c1be1938.setIcon(icon_50a5797c39fa23ab0ff71f98fe66d503);
+            
+    
+            var marker_df7d44f081adcf21251a026055526dbd = L.marker(
+                [-6.410341255, 107.4050729],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_82c65bffb4b637231d786b9c0b1eb375 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d99f71bc948d46213f65827a1dd05954 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9dc7a02e63dba9c28d89a55ca6fbd103 = $(`<div id="html_9dc7a02e63dba9c28d89a55ca6fbd103" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SMT Cikampek</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 49.4 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LIN</b></td>                 <td>0</td>                 <td>15,000</td>                 <td>78,000</td>             </tr>                          <tr>                 <td><b>GAN</b></td>                 <td>18,426</td>                 <td>18,426</td>                 <td>0</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_d99f71bc948d46213f65827a1dd05954.setContent(html_9dc7a02e63dba9c28d89a55ca6fbd103);
+            
+        
+
+        marker_df7d44f081adcf21251a026055526dbd.bindPopup(popup_d99f71bc948d46213f65827a1dd05954)
+        ;
+
+        
+    
+    
+            marker_df7d44f081adcf21251a026055526dbd.bindTooltip(
+                `<div>
+                     SMT Cikampek
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_df7d44f081adcf21251a026055526dbd.setIcon(icon_82c65bffb4b637231d786b9c0b1eb375);
+            
+    
+            var marker_b8f827be1254485cd9d7bfa17e11282b = L.marker(
+                [-6.919910006, 109.9374227],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_96f930e325a3179f2be07e4c87cdd853 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_515d150f9601fe039f5474a74d93ea64 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c287eca3926e4a0f82b6f88b2d40f3ff = $(`<div id="html_c287eca3926e4a0f82b6f88b2d40f3ff" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Batang</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 354.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>90,161</td>                 <td>84,226</td>                 <td>2,610,000</td>             </tr>                          <tr>                 <td><b>LIN</b></td>                 <td>153,080</td>                 <td>139,684</td>                 <td>2,100,000</td>             </tr>                          <tr>                 <td><b>LAR</b></td>                 <td>1,684</td>                 <td>2,904</td>                 <td>83,900</td>             </tr>                          <tr>                 <td><b>GOX</b></td>                 <td>21,972</td>                 <td>21,972</td>                 <td>0</td>             </tr>                          <tr>                 <td><b>GAN</b></td>                 <td>73,169</td>                 <td>73,169</td>                 <td>0</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_515d150f9601fe039f5474a74d93ea64.setContent(html_c287eca3926e4a0f82b6f88b2d40f3ff);
+            
+        
+
+        marker_b8f827be1254485cd9d7bfa17e11282b.bindPopup(popup_515d150f9601fe039f5474a74d93ea64)
+        ;
+
+        
+    
+    
+            marker_b8f827be1254485cd9d7bfa17e11282b.bindTooltip(
+                `<div>
+                     SIG Batang
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b8f827be1254485cd9d7bfa17e11282b.setIcon(icon_96f930e325a3179f2be07e4c87cdd853);
+            
+    
+            var marker_02806c78cb14fb711770ad121d01187c = L.marker(
+                [3.669724673, 98.67472147],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_a577b701e0e9055d7e48294d9ab5a794 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_427ad21ffda62c3d8226017e8b5d5858 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_449745d7811034918561d2cc3b5e7d78 = $(`<div id="html_449745d7811034918561d2cc3b5e7d78" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Medan 3</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> -         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>35,110</td>                 <td>36,600</td>                 <td>886,000</td>             </tr>                          <tr>                 <td><b>LIN</b></td>                 <td>49,303</td>                 <td>49,416</td>                 <td>717,400</td>             </tr>                          <tr>                 <td><b>LAR</b></td>                 <td>1,606</td>                 <td>1,488</td>                 <td>29,534</td>             </tr>                          <tr>                 <td><b>GOX</b></td>                 <td>4,512</td>                 <td>4,512</td>                 <td>0</td>             </tr>                          <tr>                 <td><b>GAN</b></td>                 <td>33,600</td>                 <td>33,600</td>                 <td>0</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_427ad21ffda62c3d8226017e8b5d5858.setContent(html_449745d7811034918561d2cc3b5e7d78);
+            
+        
+
+        marker_02806c78cb14fb711770ad121d01187c.bindPopup(popup_427ad21ffda62c3d8226017e8b5d5858)
+        ;
+
+        
+    
+    
+            marker_02806c78cb14fb711770ad121d01187c.bindTooltip(
+                `<div>
+                     SIG Medan 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_02806c78cb14fb711770ad121d01187c.setIcon(icon_a577b701e0e9055d7e48294d9ab5a794);
+            
+    
+            var marker_f50c7115e64006315e090371034993d2 = L.marker(
+                [3.669724673, 98.67472147],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_391f26d41b15648b817e47317516e2d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0b9aa2cc44a33ccc72a023b9a37f9ad = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e518575640556308ab4b5f95d0c03cab = $(`<div id="html_e518575640556308ab4b5f95d0c03cab" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Medan 2</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> -         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>835</td>                 <td>0</td>                 <td>88,600</td>             </tr>                          <tr>                 <td><b>LIN</b></td>                 <td>1,785</td>                 <td>0</td>                 <td>71,740</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_a0b9aa2cc44a33ccc72a023b9a37f9ad.setContent(html_e518575640556308ab4b5f95d0c03cab);
+            
+        
+
+        marker_f50c7115e64006315e090371034993d2.bindPopup(popup_a0b9aa2cc44a33ccc72a023b9a37f9ad)
+        ;
+
+        
+    
+    
+            marker_f50c7115e64006315e090371034993d2.bindTooltip(
+                `<div>
+                     SIG Medan 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f50c7115e64006315e090371034993d2.setIcon(icon_391f26d41b15648b817e47317516e2d4);
+            
+    
+            var marker_e405a2d864dc4bbf9723da690f048066 = L.marker(
+                [3.669546236, 98.67316494],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_5fd076ee91cdcf0a19adea87bb15ec7a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_076e74a22b3785089420c67aa054e357 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_7114d6dafb668780d9bcd8fab760551a = $(`<div id="html_7114d6dafb668780d9bcd8fab760551a" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Medan 1</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 0.4 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>     </table>     </div>     </div>`)[0];
+                popup_076e74a22b3785089420c67aa054e357.setContent(html_7114d6dafb668780d9bcd8fab760551a);
+            
+        
+
+        marker_e405a2d864dc4bbf9723da690f048066.bindPopup(popup_076e74a22b3785089420c67aa054e357)
+        ;
+
+        
+    
+    
+            marker_e405a2d864dc4bbf9723da690f048066.bindTooltip(
+                `<div>
+                     SIG Medan 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e405a2d864dc4bbf9723da690f048066.setIcon(icon_5fd076ee91cdcf0a19adea87bb15ec7a);
+            
+    
+            var marker_aa902d42ca3d7101b5fb2afb3aaba257 = L.marker(
+                [1.770083405, 101.3590355],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_a6c47cfa6e527117ef5ddd0f6e1ef6f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75db720188f46897ecfc7fedd1e94b99 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3d577516840ff90b948c7a270665e547 = $(`<div id="html_3d577516840ff90b948c7a270665e547" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Lubuk Gaung</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 48.6 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LIN</b></td>                 <td>0</td>                 <td>17,000</td>                 <td>14,000</td>             </tr>                          <tr>                 <td><b>GAN</b></td>                 <td>18,329</td>                 <td>18,329</td>                 <td>0</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_75db720188f46897ecfc7fedd1e94b99.setContent(html_3d577516840ff90b948c7a270665e547);
+            
+        
+
+        marker_aa902d42ca3d7101b5fb2afb3aaba257.bindPopup(popup_75db720188f46897ecfc7fedd1e94b99)
+        ;
+
+        
+    
+    
+            marker_aa902d42ca3d7101b5fb2afb3aaba257.bindTooltip(
+                `<div>
+                     SIG Lubuk Gaung
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aa902d42ca3d7101b5fb2afb3aaba257.setIcon(icon_a6c47cfa6e527117ef5ddd0f6e1ef6f7);
+            
+    
+            var marker_63a39ca938bd51b24a6b70e324cf9a39 = L.marker(
+                [1.080992115, 104.1297585],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_74e418019fc0944217717b1335860615 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b3e449fa77d347480a184c771c5801a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1f39f0ba58a1fdc938ae2d25f16699f1 = $(`<div id="html_1f39f0ba58a1fdc938ae2d25f16699f1" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SGI Batam</b><br>         <b>Criticality:</b> <span style="color:red;">             Critical         </span><br>         <b>Jarak:</b> 742.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>38,948</td>                 <td>41,943</td>                 <td>886,000</td>             </tr>                          <tr>                 <td><b>LIN</b></td>                 <td>45,538</td>                 <td>106,494</td>                 <td>717,400</td>             </tr>                          <tr>                 <td><b>LAR</b></td>                 <td>1,124</td>                 <td>883</td>                 <td>19,691</td>             </tr>                          <tr>                 <td><b>GOX</b></td>                 <td>13,703</td>                 <td>13,703</td>                 <td>0</td>             </tr>                          <tr>                 <td><b>GAN</b></td>                 <td>93,661</td>                 <td>93,661</td>                 <td>0</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_7b3e449fa77d347480a184c771c5801a.setContent(html_1f39f0ba58a1fdc938ae2d25f16699f1);
+            
+        
+
+        marker_63a39ca938bd51b24a6b70e324cf9a39.bindPopup(popup_7b3e449fa77d347480a184c771c5801a)
+        ;
+
+        
+    
+    
+            marker_63a39ca938bd51b24a6b70e324cf9a39.bindTooltip(
+                `<div>
+                     SGI Batam
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_63a39ca938bd51b24a6b70e324cf9a39.setIcon(icon_74e418019fc0944217717b1335860615);
+            
+    
+            var marker_223aa96a6c0d5069b61de6bbf482a349 = L.marker(
+                [1.649166247, 101.6332157],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_45c6d4665e29949ea70f65076091c2a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52fa4eee46bffc4c74a8d3db1d43249a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1871247d245e3a34b385bcc93bf50b57 = $(`<div id="html_1871247d245e3a34b385bcc93bf50b57" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Pelintung (ASP & N2)</b><br>         <b>Criticality:</b> <span style="color:red;">             Critical         </span><br>         <b>Jarak:</b> 47.2 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>10,610</td>                 <td>12,243</td>                 <td>177,200</td>             </tr>                          <tr>                 <td><b>LIN</b></td>                 <td>19,953</td>                 <td>37,142</td>                 <td>430,440</td>             </tr>                          <tr>                 <td><b>GAN</b></td>                 <td>31,545</td>                 <td>31,545</td>                 <td>0</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_52fa4eee46bffc4c74a8d3db1d43249a.setContent(html_1871247d245e3a34b385bcc93bf50b57);
+            
+        
+
+        marker_223aa96a6c0d5069b61de6bbf482a349.bindPopup(popup_52fa4eee46bffc4c74a8d3db1d43249a)
+        ;
+
+        
+    
+    
+            marker_223aa96a6c0d5069b61de6bbf482a349.bindTooltip(
+                `<div>
+                     SIG Pelintung (ASP & N2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_223aa96a6c0d5069b61de6bbf482a349.setIcon(icon_45c6d4665e29949ea70f65076091c2a1);
+            
+    
+            var marker_a1dc5e4fc28dd6d99e0370f35071c9ee = L.marker(
+                [-2.072634281, 105.1794343],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_3d50865ec92df8fd840e5dd2173f2690 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b454756c06bde811274d45d4afdedab7 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f676846d38c1a2e8722b1a743a5d9249 = $(`<div id="html_f676846d38c1a2e8722b1a743a5d9249" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SGI Muntok</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 122.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>0</td>                 <td>0</td>                 <td>64,617</td>             </tr>                          <tr>                 <td><b>GOX</b></td>                 <td>16,528</td>                 <td>16,528</td>                 <td>0</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_b454756c06bde811274d45d4afdedab7.setContent(html_f676846d38c1a2e8722b1a743a5d9249);
+            
+        
+
+        marker_a1dc5e4fc28dd6d99e0370f35071c9ee.bindPopup(popup_b454756c06bde811274d45d4afdedab7)
+        ;
+
+        
+    
+    
+            marker_a1dc5e4fc28dd6d99e0370f35071c9ee.bindTooltip(
+                `<div>
+                     SGI Muntok
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a1dc5e4fc28dd6d99e0370f35071c9ee.setIcon(icon_3d50865ec92df8fd840e5dd2173f2690);
+            
+    
+            var marker_9a549fa3d7a59e1be2c872491bd739f0 = L.marker(
+                [-2.871323781, 104.7348068],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_b8a6a97160efb3d2acd44a0ef00969dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48d12d99f34651dbd6af8ed679afe760 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f6d7b7c5f8055666b49c4395f26bbf6c = $(`<div id="html_f6d7b7c5f8055666b49c4395f26bbf6c" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SGI Palembang</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 486.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>16,800</td>                 <td>15,218</td>                 <td>177,400</td>             </tr>                          <tr>                 <td><b>LIN</b></td>                 <td>14,542</td>                 <td>14,005</td>                 <td>143,000</td>             </tr>                          <tr>                 <td><b>GAN</b></td>                 <td>400</td>                 <td>400</td>                 <td>0</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_48d12d99f34651dbd6af8ed679afe760.setContent(html_f6d7b7c5f8055666b49c4395f26bbf6c);
+            
+        
+
+        marker_9a549fa3d7a59e1be2c872491bd739f0.bindPopup(popup_48d12d99f34651dbd6af8ed679afe760)
+        ;
+
+        
+    
+    
+            marker_9a549fa3d7a59e1be2c872491bd739f0.bindTooltip(
+                `<div>
+                     SGI Palembang
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9a549fa3d7a59e1be2c872491bd739f0.setIcon(icon_b8a6a97160efb3d2acd44a0ef00969dc);
+            
+    
+            var marker_4dbe4d04b1afc91b22b2b00dbaa5db6b = L.marker(
+                [-5.104512076, 119.5067199],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_0ac6a459f2ca230075ee91e178e5cf45 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0e4ccbd9c4741a5b13cf1de3c9ddee1a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_aaebf4d3b26c3f59852975bd55bc114a = $(`<div id="html_aaebf4d3b26c3f59852975bd55bc114a" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SGI Makassar (ASP & O2)</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 852.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>12,891</td>                 <td>15,336</td>                 <td>237,400</td>             </tr>                          <tr>                 <td><b>LIN</b></td>                 <td>3,549</td>                 <td>3,632</td>                 <td>143,000</td>             </tr>                          <tr>                 <td><b>GOX</b></td>                 <td>1,805</td>                 <td>1,805</td>                 <td>0</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_0e4ccbd9c4741a5b13cf1de3c9ddee1a.setContent(html_aaebf4d3b26c3f59852975bd55bc114a);
+            
+        
+
+        marker_4dbe4d04b1afc91b22b2b00dbaa5db6b.bindPopup(popup_0e4ccbd9c4741a5b13cf1de3c9ddee1a)
+        ;
+
+        
+    
+    
+            marker_4dbe4d04b1afc91b22b2b00dbaa5db6b.bindTooltip(
+                `<div>
+                     SGI Makassar (ASP & O2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4dbe4d04b1afc91b22b2b00dbaa5db6b.setIcon(icon_0ac6a459f2ca230075ee91e178e5cf45);
+            
+    
+            var marker_544ffcdccb7e91f76eeaf6094d7908a7 = L.marker(
+                [1.42366025, 125.1067874],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_52346354accccc8c770d3897d2b4aa00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af6783fab1e69f6527ac4e278d6d532b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6a2ba1ae9a457e5847a9d74e8f69ccab = $(`<div id="html_6a2ba1ae9a457e5847a9d74e8f69ccab" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Bitung</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 1,782.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>6,041</td>                 <td>6,045</td>                 <td>177,400</td>             </tr>                          <tr>                 <td><b>LIN</b></td>                 <td>3,919</td>                 <td>464</td>                 <td>143,480</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_af6783fab1e69f6527ac4e278d6d532b.setContent(html_6a2ba1ae9a457e5847a9d74e8f69ccab);
+            
+        
+
+        marker_544ffcdccb7e91f76eeaf6094d7908a7.bindPopup(popup_af6783fab1e69f6527ac4e278d6d532b)
+        ;
+
+        
+    
+    
+            marker_544ffcdccb7e91f76eeaf6094d7908a7.bindTooltip(
+                `<div>
+                     SIG Bitung
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_544ffcdccb7e91f76eeaf6094d7908a7.setIcon(icon_52346354accccc8c770d3897d2b4aa00);
+            
+    
+            var marker_f2fa7455dee50af234cef3adc31ad911 = L.marker(
+                [-2.626296913, 121.3701426],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_ed74a8f6dbd9e22ef5f8e5e2e01d3f80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fececb1d2aabcd559ad27df622e84684 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_5343c007d6d4ca770088a25031efd743 = $(`<div id="html_5343c007d6d4ca770088a25031efd743" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Sorowako</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 478.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>0</td>                 <td>1,326</td>                 <td>10,000</td>             </tr>                          <tr>                 <td><b>GOX</b></td>                 <td>1,296</td>                 <td>1,296</td>                 <td>0</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_fececb1d2aabcd559ad27df622e84684.setContent(html_5343c007d6d4ca770088a25031efd743);
+            
+        
+
+        marker_f2fa7455dee50af234cef3adc31ad911.bindPopup(popup_fececb1d2aabcd559ad27df622e84684)
+        ;
+
+        
+    
+    
+            marker_f2fa7455dee50af234cef3adc31ad911.bindTooltip(
+                `<div>
+                     SIG Sorowako
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f2fa7455dee50af234cef3adc31ad911.setIcon(icon_ed74a8f6dbd9e22ef5f8e5e2e01d3f80);
+            
+    
+            var marker_c5d53ca21dca184999ae4832e325e66d = L.marker(
+                [-0.762626067, 119.8671546],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_bd56240e757ee2fa931fbcfb25c9f45f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21108396d91be25edb1a2def4e3f6e10 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f8ab4944016981dde289a50f753525a1 = $(`<div id="html_f8ab4944016981dde289a50f753525a1" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Palu</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 507.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>0</td>                 <td>95</td>                 <td>17,740</td>             </tr>                          <tr>                 <td><b>GOX</b></td>                 <td>1,374</td>                 <td>1,374</td>                 <td>0</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_21108396d91be25edb1a2def4e3f6e10.setContent(html_f8ab4944016981dde289a50f753525a1);
+            
+        
+
+        marker_c5d53ca21dca184999ae4832e325e66d.bindPopup(popup_21108396d91be25edb1a2def4e3f6e10)
+        ;
+
+        
+    
+    
+            marker_c5d53ca21dca184999ae4832e325e66d.bindTooltip(
+                `<div>
+                     SIG Palu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c5d53ca21dca184999ae4832e325e66d.setIcon(icon_bd56240e757ee2fa931fbcfb25c9f45f);
+            
+    
+            var marker_efb9762ab8a35a628ebd3bcfd591872b = L.marker(
+                [-3.975732741, 122.469186],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_bacc504f7662bf8837f0086985433c4b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_476e76b25519afaf5dc5fa2c0f2ef47c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8a1105bcbba6307a96b84b4c787dfedd = $(`<div id="html_8a1105bcbba6307a96b84b4c787dfedd" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Kendari</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 479.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>0</td>                 <td>1,541</td>                 <td>10,000</td>             </tr>                          <tr>                 <td><b>GOX</b></td>                 <td>1,061</td>                 <td>1,061</td>                 <td>0</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_476e76b25519afaf5dc5fa2c0f2ef47c.setContent(html_8a1105bcbba6307a96b84b4c787dfedd);
+            
+        
+
+        marker_efb9762ab8a35a628ebd3bcfd591872b.bindPopup(popup_476e76b25519afaf5dc5fa2c0f2ef47c)
+        ;
+
+        
+    
+    
+            marker_efb9762ab8a35a628ebd3bcfd591872b.bindTooltip(
+                `<div>
+                     SIG Kendari
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_efb9762ab8a35a628ebd3bcfd591872b.setIcon(icon_bacc504f7662bf8837f0086985433c4b);
+            
+    
+            var marker_ea71db3900f41f400eba3ba1bf695a57 = L.marker(
+                [0.178021725, 117.4754261],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_dcc5c359341502fd16f96c934020b795 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_371d66cfa3356cc01276a4a2f5bb4943 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b92992d7ed7cf2e6112c196950bc0505 = $(`<div id="html_b92992d7ed7cf2e6112c196950bc0505" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SGI Bontang</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 196.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>23,715</td>                 <td>24,216</td>                 <td>441,000</td>             </tr>                          <tr>                 <td><b>LIN</b></td>                 <td>15,887</td>                 <td>12,386</td>                 <td>357,000</td>             </tr>                          <tr>                 <td><b>LAR</b></td>                 <td>602</td>                 <td>4,193</td>                 <td>17,300</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_371d66cfa3356cc01276a4a2f5bb4943.setContent(html_b92992d7ed7cf2e6112c196950bc0505);
+            
+        
+
+        marker_ea71db3900f41f400eba3ba1bf695a57.bindPopup(popup_371d66cfa3356cc01276a4a2f5bb4943)
+        ;
+
+        
+    
+    
+            marker_ea71db3900f41f400eba3ba1bf695a57.bindTooltip(
+                `<div>
+                     SGI Bontang
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ea71db3900f41f400eba3ba1bf695a57.setIcon(icon_dcc5c359341502fd16f96c934020b795);
+            
+    
+            var marker_4802541b56a6a4a32a7b4b31bed7faf3 = L.marker(
+                [-3.441536712, 114.7320934],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_6896e84d8921ad3a9aef725a001eab56 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c59409ec65d49326f809d5ac219940c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_0101b2111b502486a882f433e607d809 = $(`<div id="html_0101b2111b502486a882f433e607d809" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SGI Banjarmasin</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 555.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>0</td>                 <td>900</td>                 <td>26,000</td>             </tr>                          <tr>                 <td><b>LIN</b></td>                 <td>0</td>                 <td>50</td>                 <td>11,000</td>             </tr>                          <tr>                 <td><b>GOX</b></td>                 <td>2,474</td>                 <td>2,474</td>                 <td>0</td>             </tr>                          <tr>                 <td><b>GAN</b></td>                 <td>90</td>                 <td>90</td>                 <td>0</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_3c59409ec65d49326f809d5ac219940c.setContent(html_0101b2111b502486a882f433e607d809);
+            
+        
+
+        marker_4802541b56a6a4a32a7b4b31bed7faf3.bindPopup(popup_3c59409ec65d49326f809d5ac219940c)
+        ;
+
+        
+    
+    
+            marker_4802541b56a6a4a32a7b4b31bed7faf3.bindTooltip(
+                `<div>
+                     SGI Banjarmasin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4802541b56a6a4a32a7b4b31bed7faf3.setIcon(icon_6896e84d8921ad3a9aef725a001eab56);
+            
+    
+            var marker_716360faa3c0042e79ffcf95a9438ad2 = L.marker(
+                [-2.536286729, 112.9097487],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_4511ea2abdb5c1f01d3b0e26b8a02f82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2431bf3c0329cc97304436b86403c6a9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_5196f71f03dfb12ac8648d42e2883208 = $(`<div id="html_5196f71f03dfb12ac8648d42e2883208" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SGI Sampit</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 569.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>0</td>                 <td>1,697</td>                 <td>18,394</td>             </tr>                          <tr>                 <td><b>GOX</b></td>                 <td>1,697</td>                 <td>1,697</td>                 <td>0</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_2431bf3c0329cc97304436b86403c6a9.setContent(html_5196f71f03dfb12ac8648d42e2883208);
+            
+        
+
+        marker_716360faa3c0042e79ffcf95a9438ad2.bindPopup(popup_2431bf3c0329cc97304436b86403c6a9)
+        ;
+
+        
+    
+    
+            marker_716360faa3c0042e79ffcf95a9438ad2.bindTooltip(
+                `<div>
+                     SGI Sampit
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_716360faa3c0042e79ffcf95a9438ad2.setIcon(icon_4511ea2abdb5c1f01d3b0e26b8a02f82);
+            
+    
+            var marker_1b35caf87d993fd24778e327f8ea82f8 = L.marker(
+                [-1.064617069, 116.9385414],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_86dd0283333a37754aa13c3972ff4a1b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_18b7658bcedfc31df0b7977ea7908e4d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_373f8af0d6edcad06c1502cddfb45535 = $(`<div id="html_373f8af0d6edcad06c1502cddfb45535" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SGI Kutai</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 195.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>707</td>                 <td>0</td>                 <td>51,066</td>             </tr>                          <tr>                 <td><b>LIN</b></td>                 <td>1,341</td>                 <td>0</td>                 <td>37,578</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_18b7658bcedfc31df0b7977ea7908e4d.setContent(html_373f8af0d6edcad06c1502cddfb45535);
+            
+        
+
+        marker_1b35caf87d993fd24778e327f8ea82f8.bindPopup(popup_18b7658bcedfc31df0b7977ea7908e4d)
+        ;
+
+        
+    
+    
+            marker_1b35caf87d993fd24778e327f8ea82f8.bindTooltip(
+                `<div>
+                     SGI Kutai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1b35caf87d993fd24778e327f8ea82f8.setIcon(icon_86dd0283333a37754aa13c3972ff4a1b);
+            
+    
+            var marker_8fa5f259699214f974fad34ff5d0955e = L.marker(
+                [-8.578920269, 115.1750555],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_9f34c570539736ea765c7f53015d1162 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05d3a76976d49b5ac9178469df9a8d61 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_41c45b2db12d9ff07842cc7274c8d70a = $(`<div id="html_41c45b2db12d9ff07842cc7274c8d70a" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SBM Bali</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 406.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>     </table>     </div>     </div>`)[0];
+                popup_05d3a76976d49b5ac9178469df9a8d61.setContent(html_41c45b2db12d9ff07842cc7274c8d70a);
+            
+        
+
+        marker_8fa5f259699214f974fad34ff5d0955e.bindPopup(popup_05d3a76976d49b5ac9178469df9a8d61)
+        ;
+
+        
+    
+    
+            marker_8fa5f259699214f974fad34ff5d0955e.bindTooltip(
+                `<div>
+                     SBM Bali
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8fa5f259699214f974fad34ff5d0955e.setIcon(icon_9f34c570539736ea765c7f53015d1162);
+            
+    
+            var marker_5e3cf17e535e999c15527adc774cb36e = L.marker(
+                [-8.691842, 116.113816],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_1c85976eba87cb27a97f58fc3ea39dab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0cb7afdf228fa5cb4bf521bbe2bb2737 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9ef76bd6a6b697593f827ae574103896 = $(`<div id="html_9ef76bd6a6b697593f827ae574103896" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SBM Lombok</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 526.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>GOX</b></td>                 <td>100</td>                 <td>100</td>                 <td>0</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_0cb7afdf228fa5cb4bf521bbe2bb2737.setContent(html_9ef76bd6a6b697593f827ae574103896);
+            
+        
+
+        marker_5e3cf17e535e999c15527adc774cb36e.bindPopup(popup_0cb7afdf228fa5cb4bf521bbe2bb2737)
+        ;
+
+        
+    
+    
+            marker_5e3cf17e535e999c15527adc774cb36e.bindTooltip(
+                `<div>
+                     SBM Lombok
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5e3cf17e535e999c15527adc774cb36e.setIcon(icon_1c85976eba87cb27a97f58fc3ea39dab);
+            
+    
+            var marker_16868a0e895d0f73d26e23a2df891ef4 = L.marker(
+                [-7.339994596, 112.7629774],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_7302a1fd363e06a4439ee2e27fc0b115 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eafe533ac3780aad94480f705b8e53d7 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d139c486f05fe264a162ff3d92192a50 = $(`<div id="html_d139c486f05fe264a162ff3d92192a50" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG SIER (ASP & Liq)</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 20.1 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>61,314</td>                 <td>60,813</td>                 <td>886,994</td>             </tr>                          <tr>                 <td><b>LIN</b></td>                 <td>106,229</td>                 <td>115,497</td>                 <td>717,796</td>             </tr>                          <tr>                 <td><b>LAR</b></td>                 <td>2,273</td>                 <td>2,690</td>                 <td>29,700</td>             </tr>                          <tr>                 <td><b>GOX</b></td>                 <td>14,350</td>                 <td>14,350</td>                 <td>0</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_eafe533ac3780aad94480f705b8e53d7.setContent(html_d139c486f05fe264a162ff3d92192a50);
+            
+        
+
+        marker_16868a0e895d0f73d26e23a2df891ef4.bindPopup(popup_eafe533ac3780aad94480f705b8e53d7)
+        ;
+
+        
+    
+    
+            marker_16868a0e895d0f73d26e23a2df891ef4.bindTooltip(
+                `<div>
+                     SIG SIER (ASP & Liq)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_16868a0e895d0f73d26e23a2df891ef4.setIcon(icon_7302a1fd363e06a4439ee2e27fc0b115);
+            
+    
+            var marker_d4c1fe8491f479579d9fcef00b310289 = L.marker(
+                [-7.183589962, 112.6567592],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_3ccdd6b4d616c27014a28e1c29ede20d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa0b11215d098789de4c2631d736e882 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6fec2b144d033c34707d059e4622cef2 = $(`<div id="html_6fec2b144d033c34707d059e4622cef2" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SGI Veteran (ASP & N2)</b><br>         <b>Criticality:</b> <span style="color:red;">             Critical         </span><br>         <b>Jarak:</b> 32.6 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>49,967</td>                 <td>33,293</td>                 <td>860,000</td>             </tr>                          <tr>                 <td><b>LIN</b></td>                 <td>25,530</td>                 <td>19,924</td>                 <td>672,000</td>             </tr>                          <tr>                 <td><b>LAR</b></td>                 <td>876</td>                 <td>650</td>                 <td>25,000</td>             </tr>                          <tr>                 <td><b>GOX</b></td>                 <td>411</td>                 <td>411</td>                 <td>0</td>             </tr>                          <tr>                 <td><b>GAN</b></td>                 <td>112,449</td>                 <td>112,449</td>                 <td>0</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_aa0b11215d098789de4c2631d736e882.setContent(html_6fec2b144d033c34707d059e4622cef2);
+            
+        
+
+        marker_d4c1fe8491f479579d9fcef00b310289.bindPopup(popup_aa0b11215d098789de4c2631d736e882)
+        ;
+
+        
+    
+    
+            marker_d4c1fe8491f479579d9fcef00b310289.bindTooltip(
+                `<div>
+                     SGI Veteran (ASP & N2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d4c1fe8491f479579d9fcef00b310289.setIcon(icon_3ccdd6b4d616c27014a28e1c29ede20d);
+            
+    
+            var marker_ef5a47e1e8de8dc3636a80fdcc27f0ff = L.marker(
+                [-7.359385135, 112.6506624],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_1e0829cbc6088c601a492b8e28a7743e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_56eda1c86e0fe1c1240390a1e2cc5153 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f3d95b2fcda84ba35eb9d5e86a4cb890 = $(`<div id="html_f3d95b2fcda84ba35eb9d5e86a4cb890" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SGI Gresik</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 20.8 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>41,687</td>                 <td>40,644</td>                 <td>727,188</td>             </tr>                          <tr>                 <td><b>LIN</b></td>                 <td>36,445</td>                 <td>34,892</td>                 <td>598,344</td>             </tr>                          <tr>                 <td><b>LAR</b></td>                 <td>1,032</td>                 <td>983</td>                 <td>18,560</td>             </tr>                          <tr>                 <td><b>GAN</b></td>                 <td>105,789</td>                 <td>105,789</td>                 <td>0</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_56eda1c86e0fe1c1240390a1e2cc5153.setContent(html_f3d95b2fcda84ba35eb9d5e86a4cb890);
+            
+        
+
+        marker_ef5a47e1e8de8dc3636a80fdcc27f0ff.bindPopup(popup_56eda1c86e0fe1c1240390a1e2cc5153)
+        ;
+
+        
+    
+    
+            marker_ef5a47e1e8de8dc3636a80fdcc27f0ff.bindTooltip(
+                `<div>
+                     SGI Gresik
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ef5a47e1e8de8dc3636a80fdcc27f0ff.setIcon(icon_1e0829cbc6088c601a492b8e28a7743e);
+            
+    
+            var marker_541c3cd0327211afaf92262de2ea9e17 = L.marker(
+                [-7.365229129, 112.6616473],
+                {
+}
+            ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            var icon_a9816409182ee588111fe35510575c38 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c367d6c3cb88d01a35f9d666640289ce = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e8770b12e52614082fd9b56c8a2bb607 = $(`<div id="html_e8770b12e52614082fd9b56c8a2bb607" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Sidoarjo</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Jarak:</b> 11.6 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Produk</td>             <td>Produksi<br><small>(M³/day)</small></td>             <td>Pengambilan<br><small>(M³/day)</small></td>             <td>Storage<br><small>(M³)</small></td>         </tr>                  <tr>                 <td><b>LOX</b></td>                 <td>4,252</td>                 <td>0</td>                 <td>380,000</td>             </tr>                          <tr>                 <td><b>LIN</b></td>                 <td>2,015</td>                 <td>0</td>                 <td>156,000</td>             </tr>                          <tr>                 <td><b>LAR</b></td>                 <td>85</td>                 <td>0</td>                 <td>22,000</td>             </tr>             </table>     </div>     </div>`)[0];
+                popup_c367d6c3cb88d01a35f9d666640289ce.setContent(html_e8770b12e52614082fd9b56c8a2bb607);
+            
+        
+
+        marker_541c3cd0327211afaf92262de2ea9e17.bindPopup(popup_c367d6c3cb88d01a35f9d666640289ce)
+        ;
+
+        
+    
+    
+            marker_541c3cd0327211afaf92262de2ea9e17.bindTooltip(
+                `<div>
+                     SIG Sidoarjo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_541c3cd0327211afaf92262de2ea9e17.setIcon(icon_a9816409182ee588111fe35510575c38);
+            
+    
+            ant_path_1cf44b97630ecbf8603c174f0ec1fd04 = L.polyline.antPath(
+              [[-6.19406805, 106.3212326], [-6.29294688, 107.1125409]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_1cf44b97630ecbf8603c174f0ec1fd04.bindTooltip(
+                `<div>
+                     SIG Cikande (ASP & Liq) ↔ SIG Bekasi (ASP & Liq) | 115.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_ea0b5b46d3088a76399165faa1188ea5 = L.polyline.antPath(
+              [[-6.17834494, 106.9242917], [-6.19406805, 106.3212326]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_ea0b5b46d3088a76399165faa1188ea5.bindTooltip(
+                `<div>
+                     SIG Pulogadung (ASP & Liq) ↔ SIG Cikande (ASP & Liq) | 86.6 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_ad2403672ead1137232e85255b497ef3 = L.polyline.antPath(
+              [[-6.29294688, 107.1125409], [-6.19406805, 106.3212326]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_ad2403672ead1137232e85255b497ef3.bindTooltip(
+                `<div>
+                     SIG Bekasi (ASP & Liq) ↔ SIG Cikande (ASP & Liq) | 113.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_0540476f2b0e01a49e9d67bb15c94ba2 = L.polyline.antPath(
+              [[-6.9638263, 110.2642257], [-6.919910006, 109.9374227]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_0540476f2b0e01a49e9d67bb15c94ba2.bindTooltip(
+                `<div>
+                     SIG Kendal (ASP & Liq) ↔ SIG Batang | 45.7 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_7144923442be65930a76526f51bc2e88 = L.polyline.antPath(
+              [[-6.39658483, 108.4058501], [-6.29294688, 107.1125409]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_7144923442be65930a76526f51bc2e88.bindTooltip(
+                `<div>
+                     SGI Balongan ↔ SIG Bekasi (ASP & Liq) | 196.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_fe1240ebf640bdf5c13bb55a6d9ef9af = L.polyline.antPath(
+              [[-6.410341255, 107.4050729], [-6.29294688, 107.1125409]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_fe1240ebf640bdf5c13bb55a6d9ef9af.bindTooltip(
+                `<div>
+                     SMT Cikampek ↔ SIG Bekasi (ASP & Liq) | 49.4 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_7f0166a0b81c4757694b782a0bfb8125 = L.polyline.antPath(
+              [[-6.919910006, 109.9374227], [-6.29294688, 107.1125409]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_7f0166a0b81c4757694b782a0bfb8125.bindTooltip(
+                `<div>
+                     SIG Batang ↔ SIG Bekasi (ASP & Liq) | 354.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_e6748204ce8f4abb23f1a1870cfb207a = L.polyline.antPath(
+              [[3.669724673, 98.67472147], [3.669724673, 98.67472147]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_e6748204ce8f4abb23f1a1870cfb207a.bindTooltip(
+                `<div>
+                     SIG Medan 3 ↔ SIG Medan 2 | -
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_6807fd121ec19135c661cab6e1f8fd24 = L.polyline.antPath(
+              [[3.669724673, 98.67472147], [3.669724673, 98.67472147]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_6807fd121ec19135c661cab6e1f8fd24.bindTooltip(
+                `<div>
+                     SIG Medan 2 ↔ SIG Medan 3 | -
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_bf7075d268c2067d45f77a6e6ec451f0 = L.polyline.antPath(
+              [[3.669546236, 98.67316494], [3.669724673, 98.67472147]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_bf7075d268c2067d45f77a6e6ec451f0.bindTooltip(
+                `<div>
+                     SIG Medan 1 ↔ SIG Medan 3 | 0.4 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_5a033fa11b879ac1baebf30fa082c1fd = L.polyline.antPath(
+              [[1.770083405, 101.3590355], [1.649166247, 101.6332157]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_5a033fa11b879ac1baebf30fa082c1fd.bindTooltip(
+                `<div>
+                     SIG Lubuk Gaung ↔ SIG Pelintung (ASP & N2) | 48.6 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_6c0e08489a9ddc3c3e58bdbfe82d295d = L.polyline.antPath(
+              [[1.080992115, 104.1297585], [3.669724673, 98.67472147]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_6c0e08489a9ddc3c3e58bdbfe82d295d.bindTooltip(
+                `<div>
+                     SGI Batam ↔ SIG Medan 3 | 742.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_a2a85d5137e7a775c51688dbae7d4e10 = L.polyline.antPath(
+              [[1.649166247, 101.6332157], [1.770083405, 101.3590355]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_a2a85d5137e7a775c51688dbae7d4e10.bindTooltip(
+                `<div>
+                     SIG Pelintung (ASP & N2) ↔ SIG Lubuk Gaung | 47.2 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_a94ecb82691ae57c1c385b01132aa890 = L.polyline.antPath(
+              [[-2.072634281, 105.1794343], [-2.871323781, 104.7348068]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_a94ecb82691ae57c1c385b01132aa890.bindTooltip(
+                `<div>
+                     SGI Muntok ↔ SGI Palembang | 122.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_77d2f0e4bbcbbf6bd5e06559bbfc9320 = L.polyline.antPath(
+              [[-2.871323781, 104.7348068], [-6.19406805, 106.3212326]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_77d2f0e4bbcbbf6bd5e06559bbfc9320.bindTooltip(
+                `<div>
+                     SGI Palembang ↔ SIG Cikande (ASP & Liq) | 486.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_9470fc6a011308a9aa813129ab57af24 = L.polyline.antPath(
+              [[-5.104512076, 119.5067199], [-7.339994596, 112.7629774]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_9470fc6a011308a9aa813129ab57af24.bindTooltip(
+                `<div>
+                     SGI Makassar (ASP & O2) ↔ SIG SIER (ASP & Liq) | 852.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_6cd2ccbe15651944402a76df46d24d78 = L.polyline.antPath(
+              [[1.42366025, 125.1067874], [-5.104512076, 119.5067199]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_6cd2ccbe15651944402a76df46d24d78.bindTooltip(
+                `<div>
+                     SIG Bitung ↔ SGI Makassar (ASP & O2) | 1,782.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_77125d161db127031d25b28d40390bf1 = L.polyline.antPath(
+              [[-2.626296913, 121.3701426], [-3.975732741, 122.469186]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_77125d161db127031d25b28d40390bf1.bindTooltip(
+                `<div>
+                     SIG Sorowako ↔ SIG Kendari | 478.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_5bc2e3356da346912f89986b7f5f41c2 = L.polyline.antPath(
+              [[-0.762626067, 119.8671546], [-2.626296913, 121.3701426]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_5bc2e3356da346912f89986b7f5f41c2.bindTooltip(
+                `<div>
+                     SIG Palu ↔ SIG Sorowako | 507.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_78c13ae9b3396abdc932b1f303e0f718 = L.polyline.antPath(
+              [[-3.975732741, 122.469186], [-2.626296913, 121.3701426]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_78c13ae9b3396abdc932b1f303e0f718.bindTooltip(
+                `<div>
+                     SIG Kendari ↔ SIG Sorowako | 479.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_16e61e419b3dad300ed424319b2905a7 = L.polyline.antPath(
+              [[0.178021725, 117.4754261], [-1.064617069, 116.9385414]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_16e61e419b3dad300ed424319b2905a7.bindTooltip(
+                `<div>
+                     SGI Bontang ↔ SGI Kutai | 196.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_be651ef399309acc209cc7b086b9f030 = L.polyline.antPath(
+              [[-3.441536712, 114.7320934], [-7.339994596, 112.7629774]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_be651ef399309acc209cc7b086b9f030.bindTooltip(
+                `<div>
+                     SGI Banjarmasin ↔ SIG SIER (ASP & Liq) | 555.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_79fb9a2a808a3d250102cfee9a45ba83 = L.polyline.antPath(
+              [[-2.536286729, 112.9097487], [-7.339994596, 112.7629774]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_79fb9a2a808a3d250102cfee9a45ba83.bindTooltip(
+                `<div>
+                     SGI Sampit ↔ SIG SIER (ASP & Liq) | 569.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_dfefc302365781cff7c9c90dca14e11e = L.polyline.antPath(
+              [[-1.064617069, 116.9385414], [0.178021725, 117.4754261]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_dfefc302365781cff7c9c90dca14e11e.bindTooltip(
+                `<div>
+                     SGI Kutai ↔ SGI Bontang | 195.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_2bbb2887ddacef307c7fdc8d8d3c6f48 = L.polyline.antPath(
+              [[-8.578920269, 115.1750555], [-7.339994596, 112.7629774]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_2bbb2887ddacef307c7fdc8d8d3c6f48.bindTooltip(
+                `<div>
+                     SBM Bali ↔ SIG SIER (ASP & Liq) | 406.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_1ae868e88e69386f054ae7d9fa3bf88c = L.polyline.antPath(
+              [[-8.691842, 116.113816], [-7.339994596, 112.7629774]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_1ae868e88e69386f054ae7d9fa3bf88c.bindTooltip(
+                `<div>
+                     SBM Lombok ↔ SIG SIER (ASP & Liq) | 526.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_9da9ecc25e34ef78d9cf326fa38cbe2c = L.polyline.antPath(
+              [[-7.339994596, 112.7629774], [-7.359385135, 112.6506624]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_9da9ecc25e34ef78d9cf326fa38cbe2c.bindTooltip(
+                `<div>
+                     SIG SIER (ASP & Liq) ↔ SGI Gresik | 20.1 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_48347d0ad378c8a9a51c5ef08824a455 = L.polyline.antPath(
+              [[-7.183589962, 112.6567592], [-7.339994596, 112.7629774]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_48347d0ad378c8a9a51c5ef08824a455.bindTooltip(
+                `<div>
+                     SGI Veteran (ASP & N2) ↔ SIG SIER (ASP & Liq) | 32.6 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_4abd7af813232908b1b49b1073425a94 = L.polyline.antPath(
+              [[-7.359385135, 112.6506624], [-7.339994596, 112.7629774]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_4abd7af813232908b1b49b1073425a94.bindTooltip(
+                `<div>
+                     SGI Gresik ↔ SIG SIER (ASP & Liq) | 20.8 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_d0a1d695e9cd4ae0313fbf8bd6f240dd = L.polyline.antPath(
+              [[-7.365229129, 112.6616473], [-7.359385135, 112.6506624]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_1b9f7085220cef552f2d0790f632da05);
+        
+    
+            ant_path_d0a1d695e9cd4ae0313fbf8bd6f240dd.bindTooltip(
+                `<div>
+                     SIG Sidoarjo ↔ SGI Gresik | 11.6 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
