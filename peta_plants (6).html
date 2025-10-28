@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_79396f2f48f3975f016a8b74c88674f5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    <div id="html_aaea4c0b8f5cc895e2111684937147d5" style="width: 100.0%; height: 100.0%;">
+     <div style="
+         position: fixed;
+         top: 10px; left: 50%;
+         transform: translateX(-50%);
+         z-index: 9999;
+         background: linear-gradient(90deg, #1e3a8a, #2563eb);
+         color: white;
+         padding: 12px 30px;
+         border-radius: 12px;
+         box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+         font-family: 'Trebuchet MS', sans-serif;
+         font-size: 20px;
+         font-weight: bold;
+         letter-spacing: 1px;
+     ">
+         🌍 Peta Distribusi <span style="color:#e0f2fe;">Plant Non Air Gas</span>
+     </div>
+</div>
+    
+            <div class="folium-map" id="map_79396f2f48f3975f016a8b74c88674f5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_79396f2f48f3975f016a8b74c88674f5 = L.map(
+                "map_79396f2f48f3975f016a8b74c88674f5",
+                {
+                    center: [-2.0, 118.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_834c96ae552d0282809e61e55656e421 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_834c96ae552d0282809e61e55656e421.addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            var marker_5d521a6282e63ed61aef635ce70915c7 = L.marker(
+                [3.53034867, 98.74973698],
+                {
+}
+            ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            var icon_65de71a092af76e6f51d3a249804ae81 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7121190fc0a1a63f98bba6de0fbed22c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4f8bfeced4ba3d0bba920795c2dc62be = $(`<div id="html_4f8bfeced4ba3d0bba920795c2dc62be" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Medan C2H2</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Supporting Plant:</b> SGI Gresik C2H2<br>         <b>Jarak:</b> 2,635.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Unit</td>             <td>Produksi<br></td>             <td>Pengambilan<br></td>             <td>Storage<br></td>         </tr>         <tr>             <td><b>Kg</b></td>             <td>85</td>             <td>85</td>             <td>0</td>         </tr>     </table>          </div>     </div>`)[0];
+                popup_7121190fc0a1a63f98bba6de0fbed22c.setContent(html_4f8bfeced4ba3d0bba920795c2dc62be);
+            
+        
+
+        marker_5d521a6282e63ed61aef635ce70915c7.bindPopup(popup_7121190fc0a1a63f98bba6de0fbed22c)
+        ;
+
+        
+    
+    
+            marker_5d521a6282e63ed61aef635ce70915c7.bindTooltip(
+                `<div>
+                     SIG Medan C2H2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5d521a6282e63ed61aef635ce70915c7.setIcon(icon_65de71a092af76e6f51d3a249804ae81);
+            
+    
+            var marker_8530616623396f5359aa971b6c16c2e3 = L.marker(
+                [-7.359385135, 112.6506624],
+                {
+}
+            ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            var icon_88cfaed0076b35267a9095368c025209 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cfadcbd0c46c69288d74b0cd4be85d57 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9948f0369c20d2d617d456209248edc9 = $(`<div id="html_9948f0369c20d2d617d456209248edc9" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SGI Gresik C2H2</b><br>         <b>Criticality:</b> <span style="color:red;">             Critical         </span><br>         <b>Supporting Plant:</b> SGI Kutai C2H2<br>         <b>Jarak:</b> 1,010.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Unit</td>             <td>Produksi<br></td>             <td>Pengambilan<br></td>             <td>Storage<br></td>         </tr>         <tr>             <td><b>Kg</b></td>             <td>549</td>             <td>543</td>             <td>0</td>         </tr>     </table>          </div>     </div>`)[0];
+                popup_cfadcbd0c46c69288d74b0cd4be85d57.setContent(html_9948f0369c20d2d617d456209248edc9);
+            
+        
+
+        marker_8530616623396f5359aa971b6c16c2e3.bindPopup(popup_cfadcbd0c46c69288d74b0cd4be85d57)
+        ;
+
+        
+    
+    
+            marker_8530616623396f5359aa971b6c16c2e3.bindTooltip(
+                `<div>
+                     SGI Gresik C2H2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8530616623396f5359aa971b6c16c2e3.setIcon(icon_88cfaed0076b35267a9095368c025209);
+            
+    
+            var marker_81104b0056fb13c8eafc37e8442f109b = L.marker(
+                [-1.237557479, 116.9498766],
+                {
+}
+            ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            var icon_56cbae8248a4b82f14b50562013c073c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_84829f2a3473d2b9f4e0f7cac93a97bd = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_62262825cd012ae3496fb0bace49ef86 = $(`<div id="html_62262825cd012ae3496fb0bace49ef86" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SMT Kutai C2H2</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Supporting Plant:</b> SGI Gresik C2H2<br>         <b>Jarak:</b> 1,012.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Unit</td>             <td>Produksi<br></td>             <td>Pengambilan<br></td>             <td>Storage<br></td>         </tr>         <tr>             <td><b>Kg</b></td>             <td>240</td>             <td>240</td>             <td>0</td>         </tr>     </table>          </div>     </div>`)[0];
+                popup_84829f2a3473d2b9f4e0f7cac93a97bd.setContent(html_62262825cd012ae3496fb0bace49ef86);
+            
+        
+
+        marker_81104b0056fb13c8eafc37e8442f109b.bindPopup(popup_84829f2a3473d2b9f4e0f7cac93a97bd)
+        ;
+
+        
+    
+    
+            marker_81104b0056fb13c8eafc37e8442f109b.bindTooltip(
+                `<div>
+                     SMT Kutai C2H2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_81104b0056fb13c8eafc37e8442f109b.setIcon(icon_56cbae8248a4b82f14b50562013c073c);
+            
+    
+            var marker_dc06031870c0b081b81c81303e9a121f = L.marker(
+                [-5.105613457, 119.5062037],
+                {
+}
+            ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            var icon_df690b9e16a13d980d8f96d01f228e58 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f9751b6bf94b99dcd4a17b313b7aa23 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_777e35621c523f1f0d4d92c256610e55 = $(`<div id="html_777e35621c523f1f0d4d92c256610e55" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SGI Makassar C2H2</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Supporting Plant:</b> SGI Kutai C2H2<br>         <b>Jarak:</b> 628.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Unit</td>             <td>Produksi<br></td>             <td>Pengambilan<br></td>             <td>Storage<br></td>         </tr>         <tr>             <td><b>Kg</b></td>             <td>218</td>             <td>218</td>             <td>0</td>         </tr>     </table>          </div>     </div>`)[0];
+                popup_0f9751b6bf94b99dcd4a17b313b7aa23.setContent(html_777e35621c523f1f0d4d92c256610e55);
+            
+        
+
+        marker_dc06031870c0b081b81c81303e9a121f.bindPopup(popup_0f9751b6bf94b99dcd4a17b313b7aa23)
+        ;
+
+        
+    
+    
+            marker_dc06031870c0b081b81c81303e9a121f.bindTooltip(
+                `<div>
+                     SGI Makassar C2H2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dc06031870c0b081b81c81303e9a121f.setIcon(icon_df690b9e16a13d980d8f96d01f228e58);
+            
+    
+            var marker_2d40fc0ef1dbffa1c4b02aeb59f72a3e = L.marker(
+                [0.779842422, 127.6347598],
+                {
+}
+            ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            var icon_a98d6542a4f881b780bef5d12ba775ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_998aae70d2ef27da7c4da0a691e11cc6 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d530f0f880479a3b25f3de88be2683bf = $(`<div id="html_d530f0f880479a3b25f3de88be2683bf" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Sofifi C2H2</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Supporting Plant:</b> SGI Makassar C2H2<br>         <b>Jarak:</b> 2,494.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Unit</td>             <td>Produksi<br></td>             <td>Pengambilan<br></td>             <td>Storage<br></td>         </tr>         <tr>             <td><b>Kg</b></td>             <td>182</td>             <td>183</td>             <td>0</td>         </tr>     </table>          </div>     </div>`)[0];
+                popup_998aae70d2ef27da7c4da0a691e11cc6.setContent(html_d530f0f880479a3b25f3de88be2683bf);
+            
+        
+
+        marker_2d40fc0ef1dbffa1c4b02aeb59f72a3e.bindPopup(popup_998aae70d2ef27da7c4da0a691e11cc6)
+        ;
+
+        
+    
+    
+            marker_2d40fc0ef1dbffa1c4b02aeb59f72a3e.bindTooltip(
+                `<div>
+                     SIG Sofifi C2H2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2d40fc0ef1dbffa1c4b02aeb59f72a3e.setIcon(icon_a98d6542a4f881b780bef5d12ba775ea);
+            
+    
+            var marker_acb2d299c277c07b992848ee1a70918c = L.marker(
+                [3.66975435, 98.67473937],
+                {
+}
+            ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            var icon_c5ed22657d9cc0af6bad0ff4a6455ccb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3fcd8fc79715f9d0e12e741e2db5555b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_39b59f93abcfc9ca834e6dadfb59d88f = $(`<div id="html_39b59f93abcfc9ca834e6dadfb59d88f" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Medan CO2</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Supporting Plant:</b> SIG Subang CO2<br>         <b>Jarak:</b> 1,997.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Unit</td>             <td>Produksi<br></td>             <td>Pengambilan<br></td>             <td>Storage<br></td>         </tr>         <tr>             <td><b>Kg</b></td>             <td>4,021</td>             <td>3,918</td>             <td>100,000</td>         </tr>     </table>          </div>     </div>`)[0];
+                popup_3fcd8fc79715f9d0e12e741e2db5555b.setContent(html_39b59f93abcfc9ca834e6dadfb59d88f);
+            
+        
+
+        marker_acb2d299c277c07b992848ee1a70918c.bindPopup(popup_3fcd8fc79715f9d0e12e741e2db5555b)
+        ;
+
+        
+    
+    
+            marker_acb2d299c277c07b992848ee1a70918c.bindTooltip(
+                `<div>
+                     SIG Medan CO2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_acb2d299c277c07b992848ee1a70918c.setIcon(icon_c5ed22657d9cc0af6bad0ff4a6455ccb);
+            
+    
+            var marker_e16c04d9b704ad9d3af24a731ba6c3ef = L.marker(
+                [-6.223729034, 107.5243467],
+                {
+}
+            ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            var icon_3d773612d677b9007287d34da355d652 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04ccb7c69b8123c0c553176aba4c0897 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e9431fc0f0151a799bac7b171794b490 = $(`<div id="html_e9431fc0f0151a799bac7b171794b490" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Cilamaya CO2</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Supporting Plant:</b> SIG Subang CO2<br>         <b>Jarak:</b> 76.3 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Unit</td>             <td>Produksi<br></td>             <td>Pengambilan<br></td>             <td>Storage<br></td>         </tr>         <tr>             <td><b>Kg</b></td>             <td>8,282</td>             <td>8,282</td>             <td>600,000</td>         </tr>     </table>          </div>     </div>`)[0];
+                popup_04ccb7c69b8123c0c553176aba4c0897.setContent(html_e9431fc0f0151a799bac7b171794b490);
+            
+        
+
+        marker_e16c04d9b704ad9d3af24a731ba6c3ef.bindPopup(popup_04ccb7c69b8123c0c553176aba4c0897)
+        ;
+
+        
+    
+    
+            marker_e16c04d9b704ad9d3af24a731ba6c3ef.bindTooltip(
+                `<div>
+                     SIG Cilamaya CO2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e16c04d9b704ad9d3af24a731ba6c3ef.setIcon(icon_3d773612d677b9007287d34da355d652);
+            
+    
+            var marker_ebeb0971a6904d6d8d9d1c096647321b = L.marker(
+                [-6.530100283, 107.7402753],
+                {
+}
+            ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            var icon_0f7e88c31f253fcf2190fa71a1d9d295 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48a72cff16c2118b172ea255bdcffbce = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6eb2d72c6a2222bec1f1dad61710046f = $(`<div id="html_6eb2d72c6a2222bec1f1dad61710046f" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Subang CO2</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Supporting Plant:</b> SGI Gresik CO2<br>         <b>Jarak:</b> 654.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Unit</td>             <td>Produksi<br></td>             <td>Pengambilan<br></td>             <td>Storage<br></td>         </tr>         <tr>             <td><b>Kg</b></td>             <td>64,661</td>             <td>85,000</td>             <td>1,200,000</td>         </tr>     </table>          </div>     </div>`)[0];
+                popup_48a72cff16c2118b172ea255bdcffbce.setContent(html_6eb2d72c6a2222bec1f1dad61710046f);
+            
+        
+
+        marker_ebeb0971a6904d6d8d9d1c096647321b.bindPopup(popup_48a72cff16c2118b172ea255bdcffbce)
+        ;
+
+        
+    
+    
+            marker_ebeb0971a6904d6d8d9d1c096647321b.bindTooltip(
+                `<div>
+                     SIG Subang CO2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ebeb0971a6904d6d8d9d1c096647321b.setIcon(icon_0f7e88c31f253fcf2190fa71a1d9d295);
+            
+    
+            var marker_965f69c4685c8c153d30e389b43e2836 = L.marker(
+                [-7.359385135, 112.6506624],
+                {
+}
+            ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            var icon_0b287ca79cea8fe460f159e4ec2f8833 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1d8cd251c68a2806edb140ba3119e69 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4402bc67b0cf155e231a5e9019ccbbdb = $(`<div id="html_4402bc67b0cf155e231a5e9019ccbbdb" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SGI Gresik CO2</b><br>         <b>Criticality:</b> <span style="color:red;">             Critical         </span><br>         <b>Supporting Plant:</b> SIG Subang CO2<br>         <b>Jarak:</b> 651.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Unit</td>             <td>Produksi<br></td>             <td>Pengambilan<br></td>             <td>Storage<br></td>         </tr>         <tr>             <td><b>Kg</b></td>             <td>884</td>             <td>24,000</td>             <td>650,000</td>         </tr>     </table>          </div>     </div>`)[0];
+                popup_a1d8cd251c68a2806edb140ba3119e69.setContent(html_4402bc67b0cf155e231a5e9019ccbbdb);
+            
+        
+
+        marker_965f69c4685c8c153d30e389b43e2836.bindPopup(popup_a1d8cd251c68a2806edb140ba3119e69)
+        ;
+
+        
+    
+    
+            marker_965f69c4685c8c153d30e389b43e2836.bindTooltip(
+                `<div>
+                     SGI Gresik CO2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_965f69c4685c8c153d30e389b43e2836.setIcon(icon_0b287ca79cea8fe460f159e4ec2f8833);
+            
+    
+            var marker_4b51a92ec33d3cfa9607f2b78189a8bf = L.marker(
+                [-6.293011727, 107.1125324],
+                {
+}
+            ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            var icon_437e3d7597105305772ad1f1f504433a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39e0eba69e22e20f0cc1ed619b53c072 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_60c52ad68d83c3ec55b888e35c3dbd5d = $(`<div id="html_60c52ad68d83c3ec55b888e35c3dbd5d" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Cibitung - Balok</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Supporting Plant:</b> SGI Gresik Dry Ice<br>         <b>Jarak:</b> 730.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Unit</td>             <td>Produksi<br></td>             <td>Pengambilan<br></td>             <td>Storage<br></td>         </tr>         <tr>             <td><b>Kg</b></td>             <td>2,905</td>             <td>2,905</td>             <td>0</td>         </tr>     </table>          </div>     </div>`)[0];
+                popup_39e0eba69e22e20f0cc1ed619b53c072.setContent(html_60c52ad68d83c3ec55b888e35c3dbd5d);
+            
+        
+
+        marker_4b51a92ec33d3cfa9607f2b78189a8bf.bindPopup(popup_39e0eba69e22e20f0cc1ed619b53c072)
+        ;
+
+        
+    
+    
+            marker_4b51a92ec33d3cfa9607f2b78189a8bf.bindTooltip(
+                `<div>
+                     SIG Cibitung - Balok
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4b51a92ec33d3cfa9607f2b78189a8bf.setIcon(icon_437e3d7597105305772ad1f1f504433a);
+            
+    
+            var marker_fa89160bdaa208d24337e2bff8b72dbe = L.marker(
+                [-7.359385135, 112.6506624],
+                {
+}
+            ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            var icon_08bbcd67f4a313df70824bcaffd28973 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b346ec89765bc552731f3e64fd97e1db = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b496997f6b3fdfeea60efdcfe70adc82 = $(`<div id="html_b496997f6b3fdfeea60efdcfe70adc82" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SGI Gresik Dry Ice</b><br>         <b>Criticality:</b> <span style="color:red;">             Critical         </span><br>         <b>Supporting Plant:</b> SIG Cibitung - Balok<br>         <b>Jarak:</b> 728.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Unit</td>             <td>Produksi<br></td>             <td>Pengambilan<br></td>             <td>Storage<br></td>         </tr>         <tr>             <td><b>Kg</b></td>             <td>1,864</td>             <td>2,605</td>             <td>0</td>         </tr>     </table>          </div>     </div>`)[0];
+                popup_b346ec89765bc552731f3e64fd97e1db.setContent(html_b496997f6b3fdfeea60efdcfe70adc82);
+            
+        
+
+        marker_fa89160bdaa208d24337e2bff8b72dbe.bindPopup(popup_b346ec89765bc552731f3e64fd97e1db)
+        ;
+
+        
+    
+    
+            marker_fa89160bdaa208d24337e2bff8b72dbe.bindTooltip(
+                `<div>
+                     SGI Gresik Dry Ice
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fa89160bdaa208d24337e2bff8b72dbe.setIcon(icon_08bbcd67f4a313df70824bcaffd28973);
+            
+    
+            var marker_f85abe8459c2deb1a0d219b773ed767d = L.marker(
+                [-6.293011727, 107.1125324],
+                {
+}
+            ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            var icon_45e4feab27c229fc8e222d975046e1ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79b975eefc295b3e285e0df1e6c75eea = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f0b0e59681065c4f662f52dadd0713ae = $(`<div id="html_f0b0e59681065c4f662f52dadd0713ae" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Cibitung - Pellet</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Supporting Plant:</b> SGI Gresik Dry Ice<br>         <b>Jarak:</b> 730.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Unit</td>             <td>Produksi<br></td>             <td>Pengambilan<br></td>             <td>Storage<br></td>         </tr>         <tr>             <td><b>Kg</b></td>             <td>661</td>             <td>661</td>             <td>0</td>         </tr>     </table>          </div>     </div>`)[0];
+                popup_79b975eefc295b3e285e0df1e6c75eea.setContent(html_f0b0e59681065c4f662f52dadd0713ae);
+            
+        
+
+        marker_f85abe8459c2deb1a0d219b773ed767d.bindPopup(popup_79b975eefc295b3e285e0df1e6c75eea)
+        ;
+
+        
+    
+    
+            marker_f85abe8459c2deb1a0d219b773ed767d.bindTooltip(
+                `<div>
+                     SIG Cibitung - Pellet
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f85abe8459c2deb1a0d219b773ed767d.setIcon(icon_45e4feab27c229fc8e222d975046e1ab);
+            
+    
+            var marker_eb10c968ecf27b0885432c9d443e762a = L.marker(
+                [1.080992115, 104.1297585],
+                {
+}
+            ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            var icon_a7cd90f3aa5d92642efa61c3b692aaa7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b21f47dda2230ce5f757320b4f59c39d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_70d509de010f847fe76c40f0bd84ca5f = $(`<div id="html_70d509de010f847fe76c40f0bd84ca5f" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SGI Batam H2</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Supporting Plant:</b> nan<br>         <b>Jarak:</b> -         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Unit</td>             <td>Produksi<br></td>             <td>Pengambilan<br></td>             <td>Storage<br></td>         </tr>         <tr>             <td><b>NM3</b></td>             <td>176</td>             <td>176</td>             <td>0</td>         </tr>     </table>          </div>     </div>`)[0];
+                popup_b21f47dda2230ce5f757320b4f59c39d.setContent(html_70d509de010f847fe76c40f0bd84ca5f);
+            
+        
+
+        marker_eb10c968ecf27b0885432c9d443e762a.bindPopup(popup_b21f47dda2230ce5f757320b4f59c39d)
+        ;
+
+        
+    
+    
+            marker_eb10c968ecf27b0885432c9d443e762a.bindTooltip(
+                `<div>
+                     SGI Batam H2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eb10c968ecf27b0885432c9d443e762a.setIcon(icon_a7cd90f3aa5d92642efa61c3b692aaa7);
+            
+    
+            var marker_70e377ba4369c92ef925c937d92e5aed = L.marker(
+                [-6.308639174, 107.155631],
+                {
+}
+            ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            var icon_488a6070a70115dbc2184276bf8394be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c046a217878aaad5c42634bb5a319f64 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6e3250f8904eeeda15112d6896ba56a3 = $(`<div id="html_6e3250f8904eeeda15112d6896ba56a3" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Cikarang N2O</b><br>         <b>Criticality:</b> <span style="color:red;">             Critical         </span><br>         <b>Supporting Plant:</b> SIG Sidoarjo N2O<br>         <b>Jarak:</b> 735.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Unit</td>             <td>Produksi<br></td>             <td>Pengambilan<br></td>             <td>Storage<br></td>         </tr>         <tr>             <td><b>Kg</b></td>             <td>288</td>             <td>600</td>             <td>5,400</td>         </tr>     </table>          </div>     </div>`)[0];
+                popup_c046a217878aaad5c42634bb5a319f64.setContent(html_6e3250f8904eeeda15112d6896ba56a3);
+            
+        
+
+        marker_70e377ba4369c92ef925c937d92e5aed.bindPopup(popup_c046a217878aaad5c42634bb5a319f64)
+        ;
+
+        
+    
+    
+            marker_70e377ba4369c92ef925c937d92e5aed.bindTooltip(
+                `<div>
+                     SIG Cikarang N2O
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_70e377ba4369c92ef925c937d92e5aed.setIcon(icon_488a6070a70115dbc2184276bf8394be);
+            
+    
+            var marker_ad4cde56cd6e10cb10dc833872f9e680 = L.marker(
+                [-7.366268796, 112.6619972],
+                {
+}
+            ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            var icon_214d48541259701ac0008a8a9ee0f587 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_175c827cd603f5498db415617daab2eb = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3e5162e309e20099d142652be92eeb45 = $(`<div id="html_3e5162e309e20099d142652be92eeb45" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SIG Sidoarjo N2O</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Supporting Plant:</b> SIG Cikarang N2O<br>         <b>Jarak:</b> 737.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Unit</td>             <td>Produksi<br></td>             <td>Pengambilan<br></td>             <td>Storage<br></td>         </tr>         <tr>             <td><b>Kg</b></td>             <td>297</td>             <td>600</td>             <td>400</td>         </tr>     </table>          </div>     </div>`)[0];
+                popup_175c827cd603f5498db415617daab2eb.setContent(html_3e5162e309e20099d142652be92eeb45);
+            
+        
+
+        marker_ad4cde56cd6e10cb10dc833872f9e680.bindPopup(popup_175c827cd603f5498db415617daab2eb)
+        ;
+
+        
+    
+    
+            marker_ad4cde56cd6e10cb10dc833872f9e680.bindTooltip(
+                `<div>
+                     SIG Sidoarjo N2O
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ad4cde56cd6e10cb10dc833872f9e680.setIcon(icon_214d48541259701ac0008a8a9ee0f587);
+            
+    
+            var marker_ab0b1675507c8b87441a71c3d9ef26ba = L.marker(
+                [-7.359385135, 112.6506624],
+                {
+}
+            ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            var icon_1d65c66d0504b64d158fcd5635b055a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_22aa0e561c1995ba011f7023187125e5 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9498606835a4fab01c3547493be894de = $(`<div id="html_9498606835a4fab01c3547493be894de" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SGI Gresik SFG</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Supporting Plant:</b> nan<br>         <b>Jarak:</b> -         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Unit</td>             <td>Produksi<br></td>             <td>Pengambilan<br></td>             <td>Storage<br></td>         </tr>         <tr>             <td><b>NM3</b></td>             <td>252</td>             <td>250</td>             <td>0</td>         </tr>     </table>          </div>     </div>`)[0];
+                popup_22aa0e561c1995ba011f7023187125e5.setContent(html_9498606835a4fab01c3547493be894de);
+            
+        
+
+        marker_ab0b1675507c8b87441a71c3d9ef26ba.bindPopup(popup_22aa0e561c1995ba011f7023187125e5)
+        ;
+
+        
+    
+    
+            marker_ab0b1675507c8b87441a71c3d9ef26ba.bindTooltip(
+                `<div>
+                     SGI Gresik SFG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ab0b1675507c8b87441a71c3d9ef26ba.setIcon(icon_1d65c66d0504b64d158fcd5635b055a7);
+            
+    
+            var marker_16e828232921f438567cfb94722aa48c = L.marker(
+                [-6.260594589, 107.0224183],
+                {
+}
+            ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            var icon_40f35986f062d6c2100c565e644d4a5c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c5c8cd485a94e760212394433902f5b3 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c931c7fa8d368f1938986f61887ae5f6 = $(`<div id="html_c931c7fa8d368f1938986f61887ae5f6" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">Ruci Gas H2</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Supporting Plant:</b> SMT Cikampek H2<br>         <b>Jarak:</b> 58.5 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Unit</td>             <td>Produksi<br></td>             <td>Pengambilan<br></td>             <td>Storage<br></td>         </tr>         <tr>             <td><b>NM3</b></td>             <td>10,480</td>             <td>9,000</td>             <td>10,000</td>         </tr>     </table>          </div>     </div>`)[0];
+                popup_c5c8cd485a94e760212394433902f5b3.setContent(html_c931c7fa8d368f1938986f61887ae5f6);
+            
+        
+
+        marker_16e828232921f438567cfb94722aa48c.bindPopup(popup_c5c8cd485a94e760212394433902f5b3)
+        ;
+
+        
+    
+    
+            marker_16e828232921f438567cfb94722aa48c.bindTooltip(
+                `<div>
+                     Ruci Gas H2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_16e828232921f438567cfb94722aa48c.setIcon(icon_40f35986f062d6c2100c565e644d4a5c);
+            
+    
+            var marker_6c854440d1baee3dc4e992b650a6cdeb = L.marker(
+                [-6.410411369, 107.4051065],
+                {
+}
+            ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            var icon_78b68d4330cacd507ff98bdaf19ce947 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e96bb5d6487c987f35b7575dd3583118 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4cfb161cd4f909e258992139fe3af306 = $(`<div id="html_4cfb161cd4f909e258992139fe3af306" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SMT Cikampek H2</b><br>         <b>Criticality:</b> <span style="color:darkblue;">             Normal         </span><br>         <b>Supporting Plant:</b> Ruci Gas H2<br>         <b>Jarak:</b> 58.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Unit</td>             <td>Produksi<br></td>             <td>Pengambilan<br></td>             <td>Storage<br></td>         </tr>         <tr>             <td><b>NM3</b></td>             <td>15,809</td>             <td>6,000</td>             <td>8,000</td>         </tr>     </table>          </div>     </div>`)[0];
+                popup_e96bb5d6487c987f35b7575dd3583118.setContent(html_4cfb161cd4f909e258992139fe3af306);
+            
+        
+
+        marker_6c854440d1baee3dc4e992b650a6cdeb.bindPopup(popup_e96bb5d6487c987f35b7575dd3583118)
+        ;
+
+        
+    
+    
+            marker_6c854440d1baee3dc4e992b650a6cdeb.bindTooltip(
+                `<div>
+                     SMT Cikampek H2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6c854440d1baee3dc4e992b650a6cdeb.setIcon(icon_78b68d4330cacd507ff98bdaf19ce947);
+            
+    
+            var marker_29a9414b2b7bc48115b52ddca6c054b0 = L.marker(
+                [-7.359385135, 112.6506624],
+                {
+}
+            ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            var icon_8fffebd13ce8c243162bbeef22714abb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_275902ae13892ad78e1d218c1712cd1a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_633b0d1fc38e7246f1f68735e44bf1b5 = $(`<div id="html_633b0d1fc38e7246f1f68735e44bf1b5" style="width: 100.0%; height: 100.0%;">     <div style="         font-family: Arial, sans-serif;         background-color: #f9f9f9;         border: 1px solid #ccc;         border-radius: 8px;         padding: 8px;         width: 300px;         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);     ">         <b style="font-size:14px;color:#2c3e50;">SGI Gresik H2</b><br>         <b>Criticality:</b> <span style="color:red;">             Critical         </span><br>         <b>Supporting Plant:</b> SMT Cikampek H2<br>         <b>Jarak:</b> 688.0 km         <hr>              <table style="         font-size:12px;         color:#333;         width:100%;         border-collapse:collapse;         text-align:center;     ">         <tr style="background-color:#e6f2ff; font-weight:bold;">             <td>Unit</td>             <td>Produksi<br></td>             <td>Pengambilan<br></td>             <td>Storage<br></td>         </tr>         <tr>             <td><b>NM3</b></td>             <td>13,420</td>             <td>14,054</td>             <td>0</td>         </tr>     </table>          </div>     </div>`)[0];
+                popup_275902ae13892ad78e1d218c1712cd1a.setContent(html_633b0d1fc38e7246f1f68735e44bf1b5);
+            
+        
+
+        marker_29a9414b2b7bc48115b52ddca6c054b0.bindPopup(popup_275902ae13892ad78e1d218c1712cd1a)
+        ;
+
+        
+    
+    
+            marker_29a9414b2b7bc48115b52ddca6c054b0.bindTooltip(
+                `<div>
+                     SGI Gresik H2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_29a9414b2b7bc48115b52ddca6c054b0.setIcon(icon_8fffebd13ce8c243162bbeef22714abb);
+            
+    
+            ant_path_9f005a8698dc4433d779f8437d3484b3 = L.polyline.antPath(
+              [[3.53034867, 98.74973698], [-7.359385135, 112.6506624]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            ant_path_9f005a8698dc4433d779f8437d3484b3.bindTooltip(
+                `<div>
+                     SIG Medan C2H2 ↔ SGI Gresik C2H2 | 2,635.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_03490aff536fd954c45bf0fb1f555d4b = L.polyline.antPath(
+              [[-1.237557479, 116.9498766], [-7.359385135, 112.6506624]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            ant_path_03490aff536fd954c45bf0fb1f555d4b.bindTooltip(
+                `<div>
+                     SMT Kutai C2H2 ↔ SGI Gresik C2H2 | 1,012.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_d004a02394b21f9256a6ed8a54ec7376 = L.polyline.antPath(
+              [[0.779842422, 127.6347598], [-5.105613457, 119.5062037]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            ant_path_d004a02394b21f9256a6ed8a54ec7376.bindTooltip(
+                `<div>
+                     SIG Sofifi C2H2 ↔ SGI Makassar C2H2 | 2,494.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_0e3d9183491736d9b5ec14b8eec0769f = L.polyline.antPath(
+              [[3.66975435, 98.67473937], [-6.530100283, 107.7402753]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            ant_path_0e3d9183491736d9b5ec14b8eec0769f.bindTooltip(
+                `<div>
+                     SIG Medan CO2 ↔ SIG Subang CO2 | 1,997.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_ff2fbf5e0c2b167884f4e5b19cbe2553 = L.polyline.antPath(
+              [[-6.223729034, 107.5243467], [-6.530100283, 107.7402753]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            ant_path_ff2fbf5e0c2b167884f4e5b19cbe2553.bindTooltip(
+                `<div>
+                     SIG Cilamaya CO2 ↔ SIG Subang CO2 | 76.3 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_668fac05af4bfcf8c6d1fc275e8bd54e = L.polyline.antPath(
+              [[-6.530100283, 107.7402753], [-7.359385135, 112.6506624]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            ant_path_668fac05af4bfcf8c6d1fc275e8bd54e.bindTooltip(
+                `<div>
+                     SIG Subang CO2 ↔ SGI Gresik CO2 | 654.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_5503512f729cbbaba97ff608d7e9f52b = L.polyline.antPath(
+              [[-7.359385135, 112.6506624], [-6.530100283, 107.7402753]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            ant_path_5503512f729cbbaba97ff608d7e9f52b.bindTooltip(
+                `<div>
+                     SGI Gresik CO2 ↔ SIG Subang CO2 | 651.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_02ae4e8aaff442479b1c7db58b103e42 = L.polyline.antPath(
+              [[-6.293011727, 107.1125324], [-7.359385135, 112.6506624]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            ant_path_02ae4e8aaff442479b1c7db58b103e42.bindTooltip(
+                `<div>
+                     SIG Cibitung - Balok ↔ SGI Gresik Dry Ice | 730.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_d23e5bccfb63b685888d2a7b177907f9 = L.polyline.antPath(
+              [[-7.359385135, 112.6506624], [-6.293011727, 107.1125324]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            ant_path_d23e5bccfb63b685888d2a7b177907f9.bindTooltip(
+                `<div>
+                     SGI Gresik Dry Ice ↔ SIG Cibitung - Balok | 728.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_cfb3bcfa82fe5da90831697c7a6ffca5 = L.polyline.antPath(
+              [[-6.293011727, 107.1125324], [-7.359385135, 112.6506624]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            ant_path_cfb3bcfa82fe5da90831697c7a6ffca5.bindTooltip(
+                `<div>
+                     SIG Cibitung - Pellet ↔ SGI Gresik Dry Ice | 730.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_fef9ecda53c7149f1124781b668db71a = L.polyline.antPath(
+              [[-6.308639174, 107.155631], [-7.366268796, 112.6619972]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            ant_path_fef9ecda53c7149f1124781b668db71a.bindTooltip(
+                `<div>
+                     SIG Cikarang N2O ↔ SIG Sidoarjo N2O | 735.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_e99a4c6f52cd24f31ff9f21abd7d9291 = L.polyline.antPath(
+              [[-7.366268796, 112.6619972], [-6.308639174, 107.155631]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            ant_path_e99a4c6f52cd24f31ff9f21abd7d9291.bindTooltip(
+                `<div>
+                     SIG Sidoarjo N2O ↔ SIG Cikarang N2O | 737.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_89ff1d88bbc6e5c67bfd97ee6af0977f = L.polyline.antPath(
+              [[-6.260594589, 107.0224183], [-6.410411369, 107.4051065]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            ant_path_89ff1d88bbc6e5c67bfd97ee6af0977f.bindTooltip(
+                `<div>
+                     Ruci Gas H2 ↔ SMT Cikampek H2 | 58.5 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_01f6d0fb7fb7c185d445b0b3e1dba11e = L.polyline.antPath(
+              [[-6.410411369, 107.4051065], [-6.260594589, 107.0224183]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            ant_path_01f6d0fb7fb7c185d445b0b3e1dba11e.bindTooltip(
+                `<div>
+                     SMT Cikampek H2 ↔ Ruci Gas H2 | 58.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_7bed79eeab06427de4683a1d450abc35 = L.polyline.antPath(
+              [[-7.359385135, 112.6506624], [-6.410411369, 107.4051065]],
+              {
+  "stroke": true,
+  "color": "darkred",
+  "weight": 3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_79396f2f48f3975f016a8b74c88674f5);
+        
+    
+            ant_path_7bed79eeab06427de4683a1d450abc35.bindTooltip(
+                `<div>
+                     SGI Gresik H2 ↔ SMT Cikampek H2 | 688.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
